@@ -29,10 +29,8 @@
         FROM paper
         WHERE paper_id=#{paperId}
     </select>
-
     <select id="queryAllPaper" resultMap="paperResultMap">
---         SELECT paper_id,name,detail
-        SELECT *
+        SELECT paper_id,name,detail
         FROM paper
     </select>
 </mapper>
