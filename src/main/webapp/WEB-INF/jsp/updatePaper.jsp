@@ -52,7 +52,7 @@
     <script type="text/javascript">
         function updatePaper() {
             var form = document.forms[0];
-            form.action = "<%=basePath %>paper/updatePaper";
+            form.action = "<%=basePath%>paper/updatePaper";
             form.method = "post";
             form.submit();
         }

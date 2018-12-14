@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
+    String path = request.getContextPath();
     pageContext.setAttribute("path", request.getContextPath());
 %>
 <html>
@@ -44,7 +45,7 @@
 </div>
 <br><br>
 <h3>
-    <a href="${path }/paper/allPaper">点击进入管理页面</a>
+    <a href="<%=path%>/paper/allPaper">点击进入管理页面</a>
 </h3>
 </body>
 </html>
